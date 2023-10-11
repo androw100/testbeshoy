@@ -1,0 +1,355 @@
+@import url('https://fonts.googleapis.com/css2?family=Alkatra:wght@400;500;600;700&display=swap');
+
+:root {
+    --primarycolor: #FF4A4A;
+    --font-family: 'Alkatra', cursive;
+}
+
+
+* {
+    font-family: 'Alkatra', cursive;
+}
+
+.loader {
+    display: block;
+    position: relative;
+    width: 200px;
+    height: 250px;
+    background-color: #ffffff;
+    border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+    transform-origin: 50% 100%;
+    animation: 2s eggRot linear infinite alternate;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.loader:after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 15%;
+    width: 130px;
+    height: 145px;
+    transform: translateX(-50%);
+    background-color: #ffd900;
+    border-radius: 50%;
+}
+
+@keyframes eggRot {
+    0% {
+        transform: rotate(-25deg)
+    }
+
+    100% {
+        transform: rotate(25deg)
+    }
+}
+
+.loading {
+    position: fixed;
+    z-index: 99999;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgb(225, 213, 213);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav img {
+    height: 50px;
+}
+
+.navbar ul li a:hover {
+    color: var(--primarycolor);
+}
+
+.nav_icon i {
+    position: relative;
+    left: 200px;
+    padding-left: 15px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.nav_icon i:hover {
+    color: var(--primarycolor);
+    transition: 0.5s;
+}
+
+.navbar-nav .nav-link.active:hover {
+    color: var(--primarycolor);
+}
+
+.nav-link {
+    position: relative;
+    color: black;
+    font-size: 18px;
+    margin-left: 10px;
+}
+
+.nav-link::after {
+    content: "";
+    width: 0px;
+    height: 2px;
+    background-color: var(--primarycolor);
+    position: absolute;
+    left: 10px;
+    top: 80%;
+}
+
+.nav-link:hover::after {
+    width: 70%;
+    transition: 0.5s;
+}
+
+.a1 {
+    background-color: var(--primarycolor);
+    color: #ffffff;
+    border-radius: 50px;
+    text-decoration: none;
+    padding: 6px;
+}
+
+
+.a1:hover {
+    color: #000;
+
+}
+
+.a1:focus {
+    color: #000;
+
+}
+
+.a2 {
+
+    color: #000000;
+
+    text-decoration: none;
+    padding: 6px;
+}
+
+.a2:hover {
+    color: var(--primarycolor);
+
+}
+
+.a1:focus {
+    color: var(--primarycolor);
+
+}
+
+.roc {
+    display: flex;
+    justify-content: start;
+}
+
+.roc1 {
+    border-right: #aca6a6ad 1px solid;
+    padding: 20px;
+
+}
+
+.roc2 {
+    border-right: #aca6a6ad 1px solid;
+    padding: 20px;
+
+}
+
+.roc3 {
+    padding: 20px;
+
+}
+
+.orng {
+    color: var(--primarycolor)
+}
+
+p {
+    color: #00000096;
+}
+
+.aa1 {
+    width: 35%;
+    text-align: center;
+}
+
+
+.happy {
+    background-image: url(../img/testi-bg.jpg);
+    height: auto;
+    color: #ffffff;
+    height: 250px;
+    display: flex;
+}
+
+.happy h1 {
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap
+    ;
+}
+happy2 span{
+    text-align: center;
+    width: 70%;
+    justify-content: center;
+    align-items:center
+
+}
+}
+
+.happy span {
+
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap
+    ;
+}
+
+
+
+
+form-style-1 {
+    margin: 10px auto;
+    max-width: 400px;
+    padding: 20px 12px 10px 20px;
+    font: 13px "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+
+.form-style-1 li {
+    padding: 0;
+    display: block;
+    list-style: none;
+    margin: 10px 0 0 0;
+}
+
+.form-style-1 label {
+    margin: 0 0 3px 0;
+    padding: 0px;
+    display: block;
+    font-weight: bold;
+}
+
+.form-style-1 input[type=text],
+.form-style-1 input[type=date],
+.form-style-1 input[type=datetime],
+.form-style-1 input[type=number],
+.form-style-1 input[type=search],
+.form-style-1 input[type=time],
+.form-style-1 input[type=url],
+.form-style-1 input[type=email],
+textarea,
+select {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    border: 1px solid #BEBEBE;
+    padding: 7px;
+    margin: 0px;
+    -webkit-transition: all 0.30s ease-in-out;
+    -moz-transition: all 0.30s ease-in-out;
+    -ms-transition: all 0.30s ease-in-out;
+    -o-transition: all 0.30s ease-in-out;
+    outline: none;
+}
+
+.form-style-1 input[type=text]:focus,
+.form-style-1 input[type=date]:focus,
+.form-style-1 input[type=datetime]:focus,
+.form-style-1 input[type=number]:focus,
+.form-style-1 input[type=search]:focus,
+.form-style-1 input[type=time]:focus,
+.form-style-1 input[type=url]:focus,
+.form-style-1 input[type=email]:focus,
+.form-style-1 textarea:focus,
+.form-style-1 select:focus {
+    -moz-box-shadow: 0 0 8px var(--primarycolor);
+    -webkit-box-shadow: 0 0 8px var(--primarycolor);
+    box-shadow: 0 0 8px var(--primarycolor);
+    border: 1px solid var(--primarycolor);
+}
+
+.form-style-1 .field-divided {
+    width: 49%;
+}
+
+.form-style-1 .field-long {
+    width: 100%;
+}
+
+.form-style-1 .field-select {
+    width: 100%;
+}
+
+.form-style-1 .field-textarea {
+    height: 100px;
+}
+
+.form-style-1 input[type=submit],
+.form-style-1 input[type=button] {
+    background: var(--primarycolor);
+    padding: 8px 15px 8px 15px;
+    border: none;
+    color: #fff;
+}
+
+.form-style-1 input[type=submit]:hover,
+.form-style-1 input[type=button]:hover {
+    background: #4691A4;
+    box-shadow: none;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+}
+
+.form-style-1 .required {
+    color: red;
+}
+
+form {
+    padding-bottom: 10px;
+    padding-top: 20px;
+    padding-right: 20px;
+    background-color: #fff;
+    width: 40%;
+    /* border:3px solid var(--primarycolor); */
+    position: relative;
+    top: 50px;
+    left: 100px;
+}
+
+.myform {
+    background-image: url(../img/reservation-bg.jpg);
+    padding-bottom: 100px;
+    margin-top: 50px;
+}
+
+footer img {
+    height: 50px;
+}
+
+footer {
+    background-color: #c9c9c9; 
+   
+}
+
+footer span {
+    color: #0000006d;
+}
+
+@media only screen and (max-width: 850px) {
+    form {
+
+        width: 100%;
+        position: relative;
+        top: 0px;
+        left: 0px;
+    }
+
+    .myform {
+        background-image: none;
+
+    }
